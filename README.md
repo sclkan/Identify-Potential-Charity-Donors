@@ -10,6 +10,11 @@ Our client (CharityML) had observed that every donation they received in the pas
 - K-Nearest Neighbors (KNN)
 - Randomized Search with Cross Validation
 
+## Summary
+We have chosen SVM, GBM, KNN to be our initial models as this dataset requires approaches with great flexibility due to its high number of features.  After training and testing all three models, we could see that gradient boosting is the best fit as it proved to be superior in accuracy, F-score and prediction time.  We then fine-tune this model by using a randomized search with cross-validation to find the most suitable hyperparameters.  
+
+Our optimized GBM ends up having an accuracy of 87% and an F-score of 75% in predicting whether an individual makes more than $50,000 annually (our target for donations).
+
 ## Source
 [US Census Bureau data provided by UC Irvine](https://archive.ics.uci.edu/ml/datasets/Census+Income)
 
